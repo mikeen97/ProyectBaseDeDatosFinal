@@ -44,6 +44,7 @@ namespace GUI_V_2
             while (reader.Read())
             {
                 cbNumRegistroAviones.Items.Add((int)reader.GetInt32(0));
+
             }
            
 
