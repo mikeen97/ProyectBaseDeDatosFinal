@@ -99,7 +99,7 @@
             this.MenuVertical.Dock = System.Windows.Forms.DockStyle.Left;
             this.MenuVertical.Location = new System.Drawing.Point(0, 0);
             this.MenuVertical.Name = "MenuVertical";
-            this.MenuVertical.Size = new System.Drawing.Size(250, 389);
+            this.MenuVertical.Size = new System.Drawing.Size(250, 783);
             this.MenuVertical.TabIndex = 0;
             // 
             // BtnDesconectar
@@ -160,7 +160,7 @@
             // textBox2
             // 
             this.textBox2.Location = new System.Drawing.Point(78, 491);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(1);
             this.textBox2.Name = "textBox2";
             this.textBox2.PasswordChar = '?';
             this.textBox2.Size = new System.Drawing.Size(133, 20);
@@ -169,7 +169,7 @@
             // textBox1
             // 
             this.textBox1.Location = new System.Drawing.Point(78, 445);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(1);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(133, 20);
             this.textBox1.TabIndex = 25;
@@ -242,7 +242,7 @@
             this.SubMenu.Controls.Add(this.btnControladorAereo);
             this.SubMenu.Controls.Add(this.btnTecnicos);
             this.SubMenu.Location = new System.Drawing.Point(24, 303);
-            this.SubMenu.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.SubMenu.Margin = new System.Windows.Forms.Padding(1);
             this.SubMenu.Name = "SubMenu";
             this.SubMenu.Size = new System.Drawing.Size(226, 81);
             this.SubMenu.TabIndex = 18;
@@ -291,7 +291,7 @@
             this.lblcorreo.AutoSize = true;
             this.lblcorreo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblcorreo.ForeColor = System.Drawing.Color.White;
-            this.lblcorreo.Location = new System.Drawing.Point(72, 370);
+            this.lblcorreo.Location = new System.Drawing.Point(72, 764);
             this.lblcorreo.Name = "lblcorreo";
             this.lblcorreo.Size = new System.Drawing.Size(49, 16);
             this.lblcorreo.TabIndex = 17;
@@ -303,7 +303,7 @@
             this.lbluser.AutoSize = true;
             this.lbluser.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbluser.ForeColor = System.Drawing.Color.White;
-            this.lbluser.Location = new System.Drawing.Point(72, 352);
+            this.lbluser.Location = new System.Drawing.Point(72, 746);
             this.lbluser.Name = "lbluser";
             this.lbluser.Size = new System.Drawing.Size(55, 16);
             this.lbluser.TabIndex = 16;
@@ -313,7 +313,7 @@
             // 
             this.pictureBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(1, 319);
+            this.pictureBox2.Location = new System.Drawing.Point(1, 713);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(70, 66);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -327,7 +327,7 @@
             this.lblusuario.AutoSize = true;
             this.lblusuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblusuario.ForeColor = System.Drawing.Color.White;
-            this.lblusuario.Location = new System.Drawing.Point(72, 335);
+            this.lblusuario.Location = new System.Drawing.Point(72, 729);
             this.lblusuario.Name = "lblusuario";
             this.lblusuario.Size = new System.Drawing.Size(45, 16);
             this.lblusuario.TabIndex = 14;
@@ -499,14 +499,15 @@
             this.panelContenedor.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelContenedor.Location = new System.Drawing.Point(250, 45);
             this.panelContenedor.Name = "panelContenedor";
-            this.panelContenedor.Size = new System.Drawing.Size(870, 344);
+            this.panelContenedor.Size = new System.Drawing.Size(870, 738);
             this.panelContenedor.TabIndex = 2;
+            this.panelContenedor.Paint += new System.Windows.Forms.PaintEventHandler(this.panelContenedor_Paint);
             // 
             // Principal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1120, 389);
+            this.ClientSize = new System.Drawing.Size(1120, 783);
             this.Controls.Add(this.panelContenedor);
             this.Controls.Add(this.BarraTitulo);
             this.Controls.Add(this.MenuVertical);

@@ -13,16 +13,16 @@ namespace GUI_V_2
 {
     public partial class Principal : Form
     {
-        
-        
+
+        bool logmaster, log;
+        conexion cn = new conexion();
+
         PruebasAdd prueb = new PruebasAdd();
         public Principal()
         {
             
             InitializeComponent();
         }
-
-
 
         [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
         private extern static void ReleaseCapture();
@@ -147,6 +147,11 @@ namespace GUI_V_2
         {
             BtnConectar.Visible = true;
             BtnDesconectar.Visible = false;
+        }
+        public void log()
+        private void panelContenedor_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }
