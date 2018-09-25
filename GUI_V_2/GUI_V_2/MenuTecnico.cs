@@ -41,9 +41,5 @@ namespace GUI_V_2
 
         }
 
-        private void button3_Click(object sender, EventArgs e)
-        {
-            AbrirFormMenu2(new TecnicoFind());
-        }
     }
 }

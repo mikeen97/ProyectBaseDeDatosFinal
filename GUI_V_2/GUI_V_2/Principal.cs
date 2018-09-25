@@ -148,10 +148,6 @@ namespace GUI_V_2
             BtnConectar.Visible = true;
             BtnDesconectar.Visible = false;
         }
-        public void log()
-        private void panelContenedor_Paint(object sender, PaintEventArgs e)
-        {
 
-        }
     }
 }
